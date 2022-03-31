@@ -6,57 +6,65 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
+    <link rel="stylesheet" href="../patch2/reset.css">
+    <link rel="stylesheet" href="../patch2/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.svg" alt="logo">
-        <img src="img/loupe.svg" alt="loupe">
-        <ul>
-            <li> <button> <img src="img/burger.svg" alt="burger"></button> </li>
-            <li><a href="#"> <img src="img/person.svg" alt="person"></a></li>
-            <li><a href="#"> <img src="img/basket.svg" alt="basket"></a></li>
+    <header class="header">
+        <img class="header__logo" src="img/logo.svg" alt="logo">
+        <img class="header__seacrh-icon" src="img/loupe.svg" alt="loupe">
+        <ul class="header__menu-list">
+            <li>
+                <button class="header__burger">
+                    <img class="header__burger-icon" src="img/burger.svg" alt="burger">
+                </button>
+            </li>
+            <li>
+                <a href="#" class="header__link">
+                    <img class="header__person-icon" src="img/person.svg" alt="person">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="header__link">
+                    <img class="header__basket-icon" src="img/basket.svg" alt="basket">
+                </a>
+            </li>
         </ul>
-        <nav>
-            <h2>menu</h2>
-            <ul>
-                <li>
-                    <h3>man</h3>
-
-                    <h2>menu</h2>
-                    <ul>
-                        <li>
-                            <h3>man</h3>
-
-                            <ul>
-                                <li>accessories</li>
-                                <li>bags</li>
-                                <li>denim</li>
-                                <li>t-shirts</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>woman</h3>
-                            <ul>
-                                <li>accessories</li>
-                                <li>jackets & coats</li>
-                                <li>polos</li>
-                                <li>t-shirts</li>
-                                <li>shirts</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>kids</h3>
-                            <ul>
-                                <li>accessories</li>
-                                <li>jackets & coats</li>
-                                <li>polos</li>
-                                <li>t-shirts</li>
-                                <li>shirts</li>
-                                <li>bags</li>
-                            </ul>
-                        </li>
+        <nav class="header__nav">
+            <h2 class="header__nav-tetle">menu</h2>
+            <ul class="header__nav-list">
+                <li class="header__nav-item nav-item">
+                    <h3 class="nav-item__title">man</h3>
+                    <ul class="nav-item__list">
+                        <li class="nav-item__item">accessories</li>
+                        <li class="nav-item__item">bags</li>
+                        <li class="nav-item__item">denim</li>
+                        <li class="nav-item__item">t-shirts</li>
                     </ul>
+                </li>
+                <li class="header__nav-item nav-item">
+                    <h3 class="nav-item__title">woman</h3>
+                    <ul class="nav-item__list">
+                        <li class="nav-item__item">accessories</li>
+                        <li class="nav-item__item">jackets & coats</li>
+                        <li class="nav-item__item">polos</li>
+                        <li class="nav-item__item">t-shirts</li>
+                        <li class="nav-item__item">shirts</li>
+                    </ul>
+                </li>
+                <li class="header__nav-item nav-item">
+                    <h3 class="nav-item__title">kids</h3>
+                    <ul class="nav-item__list">
+                        <li class="nav-item__item">accessories</li>
+                        <li class="nav-item__item">jackets & coats</li>
+                        <li class="nav-item__item">polos</li>
+                        <li class="nav-item__item">t-shirts</li>
+                        <li class="nav-item__item">shirts</li>
+                        <li class="nav-item__item">bags</li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -175,7 +183,6 @@
             <aside>
                 <h3>subscribe </h3>
                 <p>for our newletter and promotion</p>
-
                 <form action="" method="get">
                     <input type="email" placeholder="enter your email" type="email">
                     <button>subscribe</button>
