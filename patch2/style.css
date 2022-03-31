@@ -1,48 +1,319 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+:root {
+    --black-bkg: #222222;
+    --pink-bkg: #f1e4e6;
+    --pink-color: #f18b99;
+    --sales-bkg: #4e4544;
+    --text-color: #ffffff;
+    --item-bkg: #f8f8f8;
+    --price-color: #f16d7f;
+    --product--bkg: #e5e5e5;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
 }
-ol, ul {
-	list-style: none;
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
-blockquote, q {
-	quotes: none;
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.header {
+    background-color: var(--black-bkg);
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.header__wrp {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent ;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__nav {
+    display: none;
+}
+
+.brand {
+display: flex;
+}
+
+.brand_img {
+    height: 764px;
+    width: 800px;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.barnd_title-lower {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+.barnd_title-pink {
+    color: var(--pink-color);
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sales {
+    margin-top: 65px;
+}
+.sales__item {
+    height: 260px;
+    width: 360px;
+    background-color: var(--sales-bkg);
+    margin-bottom: 30px;
+}
+
+.sales__item-text {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center; 
+    color: var(--text-color); 
+    padding-top: 105px;
+    text-transform: uppercase;
+    padding-bottom: 10px; 
+}
+
+.sales__item-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center; 
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+
+.sales__item-women {
+    background-image: url(../index/img/woman-sales.jpg);
+}
+
+.sales__item-men {
+    background-image: url(../index/img/man-sales.jpg);
+}
+
+.sales__item-kids {
+    background-image: url(../index/img/kid-sales.jpg);
+}
+
+.sales__item-accersories {
+    background-image: url(../index/img/accesories-sales.jpg);
+    width: 100%;
+}
+
+.product__weeks {
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 48px;    
+}
+
+.product__title{
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 6px;
+}
+
+.product__sub-title{
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.product__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item {
+height: 581px;
+width: 360px;
+background-color: var(--item-bkg);
+margin-bottom: 30px;
+}
+
+.product__item-title {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 25px 193px 13px 18px;    
+}
+
+.product__item-text {
+font-weight: 300;
+line-height: 17px;
+padding: 0 12px 18px 16px;
+}
+
+.pruduct__item-price {
+font-size: 16px;
+line-height: 19px;
+color: var(--price-color);
+padding: 0 289px 20px 18px;
+}
+
+.button__product {
+    border: 1px solid #FF6A6A;
+    background-color: var(--product--bkg);
+    text-align: center;
+    height: 47px;
+    width: 211px;
+    margin: 48px 465px 95px 464px;
+}
+
+.button__product-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--price-color);
+    text-transform: capitalize ;
+}
+
+.advanteg {
+    background-color: var(--black-bkg);
+    min-height: 341px;
+}
+.advanteg__list {
+    display: flex;
+  
+}
+
+.advanteg__item {
+    justify-content: center;
+    height: 134px;
+    width: 360px;
+    text-align: center ;
+    padding: 103px 0 104px 0;
+}
+
+.advanteg__item-img {
+    padding: 0 157px 28px  158px;
+}
+
+.advanteg__item-title {
+font-size: 20px;
+line-height: 24px;
+color: var(--text-color);
+text-transform: capitalize;
+}
+
+.advanteg__item-text {
+font-weight: 300;
+line-height: 17px;
+color: var(--text-color);
+padding: 16px 30px 104px 0;
+}
+
+.subscription {
+    background-image: url(../index/img/background-footer.jpg) ;
+    background-size:cover;
+    height: 448px; 
+}
+.subscription__wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscription__woman{
+    padding: 86px 340px 126px 0;
+}
+
+.subscription__woman-img {
+    padding: 0 117px 10px 115px;
+}
+.subscription__woman-text{
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;  
+    text-align: center;
+}
+
+.subscription__news {
+    margin: 156px 0 0 0;
+}
+
+.subscription__news-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscription__news-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.info {
+    background-color: var(--black-bkg);
+    height: 79px;
+}
+
+.info-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+.info__text {
+    color: var(--text-color);
+    padding-top: 30px;
+}
+.info__list {
+    display: flex;
+    padding-top: 24px;
+}
+.info__item {
+    padding-left: 8px;
 }
