@@ -1,0 +1,35 @@
+.advanteg {
+    background-color: var($black-bkg);
+    min-height: 341px;
+}
+
+.advanteg__list {
+    display: flex;
+
+}
+
+.advanteg__item {
+    justify-content: center;
+    height: 134px;
+    width: 360px;
+    text-align: center;
+    padding: 103px 0 104px 0;
+}
+
+.advanteg__item-img {
+    padding: 0 157px 28px 158px;
+}
+
+.advanteg__item-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: var($text-color);
+    text-transform: capitalize;
+}
+
+.advanteg__item-text {
+    font-weight: 300;
+    line-height: 17px;
+    color: var($text-color);
+    padding: 16px 30px 104px 0;
+}

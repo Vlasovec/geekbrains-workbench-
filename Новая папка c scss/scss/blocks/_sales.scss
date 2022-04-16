@@ -1,0 +1,51 @@
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales {
+    margin-top: 65px;
+}
+
+.sales__item {
+    height: 260px;
+    width: 360px;
+    background-color: var($sales-bkg);
+    margin-bottom: 30px;
+}
+
+.sales__item-text {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: var($text-color);
+    padding-top: 105px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.sales__item-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: var($pink-color);
+    text-transform: uppercase;
+}
+
+.sales__item-women {
+    background-image: url(../index/img/woman-sales.jpg);
+}
+
+.sales__item-men {
+    background-image: url(../index/img/man-sales.jpg);
+}
+
+.sales__item-kids {
+    background-image: url(../index/img/kid-sales.jpg);
+}
+
+.sales__item-accersories {
+    background-image: url(../index/img/accesories-sales.jpg);
+    width: 100%;
+}

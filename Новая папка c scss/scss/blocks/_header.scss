@@ -1,0 +1,48 @@
+.header {
+    background-color: var($black-bkg);
+}
+
+.header__wrp {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent;
+}
+
+.header__burger:focus+.header__nav {
+    display: block;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__nav {
+    position: absolute;
+    background: white;
+    display: none;
+    width: 232px;
+    height: 764px;
+    margin-left: 100px;
+    margin-top: 23px;
+}
+
+.header__nav-tetle {
+    font-weight: 700;
+    padding: 37px 143px 24px 34px;
+    text-transform: uppercase;
+}

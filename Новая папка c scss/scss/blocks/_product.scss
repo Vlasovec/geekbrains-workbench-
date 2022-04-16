@@ -1,0 +1,107 @@
+.product__weeks {
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 48px;
+}
+
+.product__title {
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 6px;
+}
+
+.product__sub-title {
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.product__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item {
+    height: 581px;
+    width: 360px;
+    background-color: var($item-bkg);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.product__item-overlay::before {
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: var($overlay-bkg);
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+
+.product__item-overlay::before {
+    display: none;
+}
+
+.product__item-overlay-buuton {
+    width: 138px;
+    height: 43px;
+    position: absolute;
+    margin: 188px 111px 188px 111px;
+    border: 1px solid white;
+    background: var($overlay-bkg);
+    opacity: 0.7;
+    display: none;
+}
+
+.product__item:hover .product__item-overlay-buuton {
+    display: block;
+}
+
+.product__item:hover .product__item-overlay::before {
+    display: block;
+}
+
+.product__item-title {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 25px 193px 13px 18px;
+}
+
+.product__item-text {
+    font-weight: 300;
+    line-height: 17px;
+    padding: 0 12px 18px 16px;
+}
+
+.pruduct__item-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: var($price-color);
+    padding: 0 289px 20px 18px;
+}
+
+.product__button {
+    border: 1px solid #FF6A6A;
+    background-color: var($product--bkg);
+    text-align: center;
+    height: 47px;
+    width: 211px;
+    margin: 48px 465px 95px 464px;
+}
+
+.product__button:hover {
+    background: var($buton-bkg);
+}
+
+.product__button:hover .product-text__button {
+    color: var($text-color);
+}
+
+.product-text__button {
+    font-size: 16px;
+    line-height: 19px;
+    color: var($price-color);
+    text-transform: capitalize;
+}

@@ -1,0 +1,79 @@
+.subscription {
+    background-image: url(../index/img/background-footer.jpg);
+    background-size: cover;
+    height: 448px;
+}
+
+.subscription__wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscription__woman {
+    padding: 86px 340px 126px 0;
+}
+
+.subscription__woman-img {
+    padding: 0 117px 10px 115px;
+}
+
+.subscription__woman-text {
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.subscription__news {
+    margin: 156px 0 0 0;
+}
+
+.subscription__news-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscription__news-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscription__email {
+    height: 43px;
+    width: 256px;
+    left: 917px;
+    top: 243px;
+    margin-right: -7px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: var($email-bkg);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 0;
+}
+
+.subscription__button {
+    height: 45px;
+    width: 100px;
+    left: 1173px;
+    top: 243px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: var($text-color);
+    background: var($buton-bkg);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 0;
+}
+
+.subscription__button:hover {
+    background-color: #e05c6e;
+}

@@ -1,0 +1,13 @@
+.nav-item__title {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var($price-color);
+    padding: 0 0 12px 33px;
+}
+
+.nav-item__item {
+    font-weight: 400;
+    padding: 0 0 11px 55px;
+    text-transform: capitalize;
+    color: var($item-color);
+}
